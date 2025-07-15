@@ -37,6 +37,7 @@ pip install -e .[audio]
         ```
     *   Copy only the token part (after `Token `).
     *   Set the `CHARACTER_AI_TOKEN` environment variable or create a `.env` file in the project root and add `CHARACTER_AI_TOKEN=your_copied_token`.
+
     **Authorization easy (use for mobile) script**  
     If you want to easily obtain your CharacterAI token using your email, you can use the provided `auth.py` script:
 
@@ -52,11 +53,11 @@ pip install -e .[audio]
     This makes it easy to get your token without using browser developer tools.
 
    2. **How to get a voice ID:** 
-   > Go to the character page on Character AI (for example, [this link](https://character.ai/chat)). 
+   - Go to the character page on Character AI (for example, [this link](https://character.ai/chat)). 
    - Choose a voice and click the **Share** button. 
-    - In the opened window, copy the link. The link will look like: `https://character.ai/?voiceId=2372d060-8401-11ee-b277-020017084944` 
-    - Copy the value after `voiceId=` (for example, `2372d060-8401-11ee-b277-020017084944`). 
-    - Use this value as the `voice` parameter in the library. 
+   - In the opened window, copy the link. The link will look like: `https://character.ai/?voiceId=2372d060-8401-11ee-b277-020017084944` 
+   - Copy the value after `voiceId=` (for example, `2372d060-8401-11ee-b277-020017084944`). 
+   - Use this value as the `voice` parameter in the library. 
 
 ## Usage Examples
 You can use the library in several ways. For simple scripts, use the synchronous method; for async applications, use the `async`/`await` method.
